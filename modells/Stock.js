@@ -3,8 +3,13 @@ const validator = require("validator");
 const { ObjectId } = mongoose.Schema.Types;
 // schema deshign
 
-const productSchema = mongoose.Schema(
+const stockSchema = mongoose.Schema(
   {
+    productId: {
+      type: ObjectId,
+      required: true,
+      ref: "Product",
+    },
     name: {
       type: String,
       required: [true, "Please provide a name for this product."],
@@ -48,6 +53,16 @@ const productSchema = mongoose.Schema(
         },
       },
     ],
+    price: {
+      type: Number,
+      required: true,
+      minLength: [0, "Product price can't be negative"],
+    },
+    quantity: {
+      type: Number,
+      required: true,
+      minLength: [0, "Product quantity can't be negative"],
+    },
     category: {
       type: String,
       required: true,
@@ -60,8 +75,53 @@ const productSchema = mongoose.Schema(
       id: {
         type: ObjectId,
         ref: "Brand",
-        required: true
+        required: true,
       },
+    },
+    status: {
+      type: String,
+      required: true,
+      enum: {
+        values: ["in-stock", "out-of-stock", "discontinued"],
+        message: "Status can't be {VALUE} ",
+      },
+    },
+    store: {
+      name: {
+        type: String,
+        trim: true,
+        required: [true, "Please provide store name"],
+        lowercase: true,
+        enum: {
+          values: [
+            "dhaka",
+            "chattogram",
+            "rajshahi",
+            "sylhet",
+            "khulna",
+            "barishal",
+            "rangpur",
+            "mymensingh",
+          ],
+          message: "{VALUE} is not a valid name",
+        },
+      },
+      id: {
+        type: ObjectId,
+        required: true,
+        ref: "Store",
+      },
+    },
+    suppliedBy: {
+      name: {
+        type: String,
+        trim: true,
+        required: [true, "Please provide supplier name"],
+        },
+        id: {
+            type: ObjectId,
+            ref: "Supplier"
+        }
     },
   },
   {
@@ -71,7 +131,7 @@ const productSchema = mongoose.Schema(
 
 //mongoose middlewares for saving data: pre/post
 
-productSchema.pre("save", function (next) {
+stockSchema.pre("save", function (next) {
   // this →
   console.log("Before saving data");
   if (this.quantity == 0) {
@@ -90,6 +150,6 @@ productSchema.pre("save", function (next) {
 
 //SCHEMA => MODEL => QUERY
 
-const Product = mongoose.model("Product", productSchema);
+const Stock = mongoose.model("Stock", stockSchema);
 
-module.exports = Product;
+module.exports = Stock;
