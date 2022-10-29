@@ -1,85 +1,85 @@
 const {
-  createStockService,
-  getStockService,
-  getStockByIdService,
-  updateStockService,
-} = require("../services/stock.service");
+  getStoreService,
+  getStoreByIdService,
+  createStoreService,
+  updateStoreService,
+} = require("../services/store.scervice");
 
-exports.createStock = async (req, res, next) => {
+exports.createStore = async (req, res, next) => {
   try {
-    const result = await createStockService(req.body);
+    const result = await createStoreService(req.body);
 
     res.status(200).json({
       status: "success",
-      message: "Successfully created the stock",
+      message: "Successfully created the store",
     });
   } catch (error) {
     res.status(400).json({
       status: "fail",
-      message: "Couldn't create the stock",
+      message: "Couldn't create the store",
       error: error.message,
     });
   }
 };
 
-exports.getStock = async (req, res, next) => {
+exports.getStore = async (req, res, next) => {
   try {
-    const stocks = await getStockService();
+    const stores = await getStoreService();
     res.status(200).json({
       status: "success",
-      data: stocks,
+      data: stores,
     });
   } catch (error) {
     res.status(400).json({
       status: "fail",
-      message: "Couldn't get the stock",
+      message: "Couldn't get the stores",
       error: error.message,
     });
   }
 };
 
-exports.getStockById = async (req, res, next) => {
+exports.getStoreById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const stock = await getStockByIdService(id);
+    const store = await getStoreByIdService(id);
 
-    if (!stock) {
+    if (!store) {
       return res.status(400).json({
         status: "fail",
-        error: "Couldn't find a stock with this id",
+        error: "Couldn't find a store with this id",
       });
     }
     res.status(200).json({
       status: "success",
-      data: stock,
+      data: store,
     });
   } catch (error) {
     res.status(400).json({
       status: "fail",
-      message: "Couldn't get the stock",
+      message: "Couldn't get the store",
       error: error.message,
     });
   }
 };
 
-exports.updateStock = async (req, res, next) => {
+exports.updateStore = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const result = await updateStockService(id, req.body);
+    const result = await updateStoreService(id, req.body);
     if (!result.nModified) {
       return res.status(400).json({
         status: "fail",
-        error: "Couldn't update the stock with this id",
+        error: "Couldn't update the store with this id",
       });
     }
     res.status(200).json({
       status: "success",
-      message: "Successfully updated the stock",
+      message: "Successfully updated the store",
     });
   } catch (error) {
     res.status(400).json({
       status: "fail",
-      message: "Couldn't update the stock",
+      message: "Couldn't update the store",
       error: error.message,
     });
   }
