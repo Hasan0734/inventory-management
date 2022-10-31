@@ -6,8 +6,8 @@ exports.createStoreService = async (data) => {
 };
 
 exports.getStoreService = async () => {
-  const result = await Store.find({});
-  return result;
+  const stores = await Store.find({});
+  return stores;
 };
 
 exports.getStoreByIdService = async (storeId) => {

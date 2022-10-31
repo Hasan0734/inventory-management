@@ -22,7 +22,7 @@ exports.createStore = async (req, res, next) => {
   }
 };
 
-exports.getStore = async (req, res, next) => {
+exports.getStores = async (req, res, next) => {
   try {
     const stores = await getStoreService();
     res.status(200).json({

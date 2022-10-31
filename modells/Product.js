@@ -31,23 +31,30 @@ const productSchema = mongoose.Schema(
       {
         type: String,
         required: true,
-        validate: {
-          validator: (value) => {
-            if (!Array.isArray(value)) {
-              return false;
-            }
-            let isValid = true;
-            value.forEach((url) => {
-              if (!validator.isURL(url)) {
-                isValid = false;
-              }
-            });
-            return isValid;
-          },
-          message: "Please provide valid image urls",
-        },
+        validate: [validator.isURL, "wrong url"],
       },
     ],
+    // imageURLs: [
+    //   {
+    //     type: String,
+    //     required: true,
+    //     validate: {
+    //       validator: (value) => {
+    //         if (!Array.isArray(value)) {
+    //           return false;
+    //         }
+    //         let isValid = true;
+    //         value.forEach((url) => {
+    //           if (!validator.isURL(url)) {
+    //             isValid = false;
+    //           }
+    //         });
+    //         return isValid;
+    //       },
+    //       message: "Please provide valid image urls",
+    //     },
+    //   },
+    // ],
     category: {
       type: String,
       required: true,
@@ -60,7 +67,7 @@ const productSchema = mongoose.Schema(
       id: {
         type: ObjectId,
         ref: "Brand",
-        required: true
+        required: true,
       },
     },
   },

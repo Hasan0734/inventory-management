@@ -5,7 +5,7 @@ const storeController = require("../controllers/store.controller");
 router
   .route("/")
   .post(storeController.createStore)
-  .get(storeController.getStore);
+  .get(storeController.getStores);
 router
   .route("/:id")
   .get(storeController.getStoreById)

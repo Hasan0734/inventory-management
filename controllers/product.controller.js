@@ -86,7 +86,6 @@ module.exports.createProduct = async (req, res, next) => {
     // const data =  fs.readFileSync('./data/MOCK_DATA.json');
     // const parsedData = JSON.parse(data)
     const result = await createProductService(req.body);
-    result.logger();
 
     res.status(200).json({
       status: "success",
@@ -199,3 +198,11 @@ exports.bulkDeleteProduct = async (req, res, next) => {
     });
   }
 };
+
+exports.fileUpload = async (req, res) => {
+  try {
+          res.status(200).json(req.file)
+  } catch (error) {
+    res.send(error.message)
+  }
+}

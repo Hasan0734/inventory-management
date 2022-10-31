@@ -6,8 +6,8 @@ exports.createCategoryService = async (data) => {
 };
 
 exports.getCategoryService = async () => {
-  const brands = await Category.find({});
-  return brands;
+  const categories = await Category.find({});
+  return categories;
 };
 
 exports.getCategoryByIdService = async (categoryId) => {
