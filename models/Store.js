@@ -7,6 +7,7 @@ const storeSchema = mongoose.Schema(
       type: String,
       trim: true,
       required: [true, "Please provide store name"],
+      unique: true,
       lowercase: true,
       enum: {
         values: [
@@ -15,7 +16,7 @@ const storeSchema = mongoose.Schema(
           "rajshahi",
           "sylhet",
           "khulna",
-          "barishal",
+          "barisal",
           "rangpur",
           "mymensingh",
         ],

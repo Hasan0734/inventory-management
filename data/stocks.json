@@ -1,6 +1,6 @@
 [
   {
-    "productId": "633476cce0259f4febbfc437",
+    "productId": "6361d8bc59f41d0720529412",
     "name": "Pran Chinigura Aromatic Rice - 5kg Bag",
     "description": "Pran Chinigura Aromatic Rice (Polau). Fresh and Clean, Vacuum Packed. Pran Chinigura Rice can be use in Biriyani, Polau, Firni, Kheer, Khichuri.",
     "imageURLs": [
@@ -14,20 +14,20 @@
     "category": "Rice",
     "brand": {
       "name": "Pran",
-      "id": "633177da56be8326a827b812"
+      "id": "635ff37128119b15dc1e037f"
     },
     "store": {
       "name": "chattogram",
-      "id": "633412b419894112041a9018"
+      "id": "6361dbb7f5c8460d5c1c3d89"
     },
     "suppliedBy": {
       "name": "mezbaul abedin persian",
-      "id": "63341c683d8c200adc31b6b6"
+      "id": "6361cfa999d0b73a04a45ddf"
     },
     "sellCount": 50
   },
   {
-    "productId": "633476cce0259f4febbfc438",
+    "productId": "6361d8da6b0e4916688967fd",
     "name": "Pran Chinigura Aromatic Rice - 50kg",
     "description": "Pran Chinigura Aromatic Rice (Polau). Fresh and Clean, Vacuum Packed. Pran Chinigura Rice can be use in Biriyani, Polau, Firni, Kheer, Khichuri.",
     "imageURLs": [
@@ -36,23 +36,25 @@
     ],
     "unit": "bag",
     "price": "1460",
+    "quantity": 1200,
+    "status": "in-stock",
     "category": "Rice",
     "brand": {
       "name": "Pran",
-      "id": "633177da56be8326a827b812"
+      "id": "635ff37128119b15dc1e037f"
     },
     "store": {
       "name": "chattogram",
-      "id": "633412b419894112041a9018"
+      "id": "6361dbb7f5c8460d5c1c3d89"
     },
     "suppliedBy": {
       "name": "mezbaul abedin persian",
-      "id": "63341c683d8c200adc31b6b6"
+      "id": "6361cfa999d0b73a04a45ddf"
     },
     "sellCount": 10
   },
   {
-    "productId": "633476cce0259f4febbfc439",
+    "productId": "6361d8f77794f825c800acc1",
     "name": "Pran Nazirshail Rice - 5kg",
     "description": "Pran Nazirshail Rice. Fresh and Clean, Vacuum Packed. Pran Chinigura Rice can be use in Biriyani, Polau, Firni, Kheer, Khichuri.",
     "imageURLs": [
@@ -61,23 +63,25 @@
     ],
     "unit": "bag",
     "price": "378",
+    "quantity": 1200,
+    "status": "in-stock",
     "category": "Rice",
     "brand": {
       "name": "Pran",
-      "id": "633177da56be8326a827b812"
+      "id": "635ff37128119b15dc1e037f"
     },
     "store": {
       "name": "chattogram",
-      "id": "633412b419894112041a9018"
+      "id": "6361dbb7f5c8460d5c1c3d89"
     },
     "suppliedBy": {
       "name": "mezbaul abedin persian",
-      "id": "63341c683d8c200adc31b6b6"
+      "id": "6361cfa999d0b73a04a45ddf"
     },
     "sellCount": 90
   },
   {
-    "productId": "633476cce0259f4febbfc43a",
+    "productId": "635ff7deffcaf920504ba295",
     "name": "Fresh Chinigura Rice",
     "description": "Fresh Chinigura Rice. Fresh and Clean, Vacuum Packed. Fresh Chinigura Rice can be use in Biriyani, Polau, Firni, Kheer, Khichuri.",
     "imageURLs": [
@@ -85,23 +89,25 @@
     ],
     "unit": "kg",
     "price": "357",
+    "quantity": 1200,
+    "status": "in-stock",
     "category": "Rice",
     "brand": {
       "name": "Fresh",
-      "id": "6329f32f40244f2a44c85741"
+      "id": "635ff35928119b15dc1e037b"
     },
     "store": {
       "name": "chattogram",
-      "id": "633412b419894112041a9018"
+      "id": "6361dbb7f5c8460d5c1c3d89"
     },
     "suppliedBy": {
       "name": "rasel ahmed",
-      "id": "63341cd73d8c200adc31b6bd"
+      "id": "6361d02b99d0b73a04a45de3"
     },
     "sellCount": 17
   },
   {
-    "productId": "633476cce0259f4febbfc43b",
+    "productId": "6361d94b01b59430c4a15394",
     "name": "ACI Pure Miniket Rice Premium",
     "description": "ACI Pure Miniket Rice Premium. Fresh and Clean, Vacuum Packed. ACI Pure Miniket Rice Premium can be use in Biriyani, Polau, Firni, Kheer, Khichuri.",
     "imageURLs": [
@@ -109,18 +115,20 @@
     ],
     "unit": "kg",
     "price": "257",
+    "quantity": 2000,
+    "status": "in-stock",
     "category": "Rice",
     "brand": {
       "name": "ACI",
-      "id": "6329f49f9c503f0b7438b25c"
+      "id": "635ff34628119b15dc1e0379"
     },
     "store": {
       "name": "chattogram",
-      "id": "633412b419894112041a9018"
+      "id": "6361dbb7f5c8460d5c1c3d89"
     },
     "suppliedBy": {
       "name": "sagor biswas",
-      "id": "63347a1f92cc9521ec42370d"
+      "id": "6361e0e64bf64f36d8a29388"
     },
     "sellCount": 103
   },

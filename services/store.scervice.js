@@ -1,4 +1,4 @@
-const Store = require("../modells/Store");
+const Store = require("../models/Store");
 
 exports.createStoreService = async (data) => {
   const result = await Store.create(data);
@@ -6,7 +6,7 @@ exports.createStoreService = async (data) => {
 };
 
 exports.getStoreService = async () => {
-  const stores = await Store.find({});
+  const stores = await Store.find();
   return stores;
 };
 

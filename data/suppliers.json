@@ -66,5 +66,22 @@
     "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
     "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
     "status": "active"
+  },
+  {
+    "name": "sagor biswas",
+    "email": "sagor.fresh@test.com",
+    "brand": {
+      "name": "ACI",
+      "id": "635ff34628119b15dc1e0379"
+    },
+    "contactNumber": ["01111111111", "02222222222"],
+    "emergencyContactNumber": "011111111",
+    "tradeLicenceNumber": 1111111111,
+    "presentAddress": "944 Honduras Street",
+    "permanentAddress": "944 Ghana Street",
+    "location": "chattogram",
+    "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+    "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+    "status": "active"
   }
 ]

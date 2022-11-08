@@ -1,5 +1,5 @@
-const Product = require("../modells/Product");
-const Brand = require("../modells/Brand");
+const Product = require("../models/Product");
+const Brand = require("../models/Brand");
 
 exports.getProductsService = async (filters, queries) => {
   const products = await Product.find(filters)
